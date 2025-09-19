@@ -1,9 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+  background-position: center;
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: black;
   color: white;
+  position: fixed;
 }
 
 .nav-bar a{
@@ -13,6 +20,7 @@
 }
  .greet{
   text-align: center;
+  padding-top: 60px;
  }
  #me{
   display: block;
@@ -21,4 +29,52 @@
   position: relative;
   left: 35%;
   border-radius: 50%;
+  z-index: -1;
  }
+
+ .about {
+  max-width: 100%;
+  text-align: center;
+ }
+
+ .story {
+  max-width: 50%;
+  /*text-align: center;*/
+  justify-content: left;
+
+ }
+
+ #story-grid {
+  display: flex;
+  width: 100%;
+ }
+ .grid {
+  width: 50%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);  
+  gap: 3px;
+  padding-bottom: 20px;
+ }
+ .grid .card{
+  min-width: 50%;
+  text-align: center;
+  height: 200px;
+
+ }
+  .skills {
+    padding-bottom: 20px;
+  }
+
+  .tt {
+    justify-content: space-between;
+    display: flex;
+  }
+.badge{
+  background-color: rgba(60,60,60,0.5);
+}
+#work {
+  background-color: rgb(112, 112, 201);
+  width: 25%;
+}

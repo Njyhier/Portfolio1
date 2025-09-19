@@ -20,176 +20,240 @@
             <a href="#">Contact</a>
           </div>
         </div>
-        <div class="greet">
-          <p>Hi, I'm Njihia Johnson</p>
-          <p>Full Stack Developer & UI/UX Designer</p>
-          <p>I create beautiful, functional web applications that solve real-world problems. With 5+ years of experience in modern web technologies, 
-            I bring ideas to life through clean code and thoughtful design.</p>
-            <button type="btn" class="work">View My Work</button>
-            <button type="btn" class="contact">Get in touch</button>
-            <img src="img/me.jpeg" alt="mysef" id="me">
+      </div>
+      <div class="row" id="greet">
+        <div class="col-md-6" id="intro">
+          <h1>Hi, I'm Njyhier</h1>
+          <h2>Full Stack Developer & UI/UX Designer</h2>
+          <p style="width: 70%;">I create beautiful, functional web applications that solve real-world problems. 
+             With 5+ years of experience in modern web technologies, 
+             I bring ideas to life through clean code and thoughtful design.</p>
+             <button type="button" class="btn btn-primary" id="view-work">View My Work</button>
+             <button type="button" class="btn btn-success" id="contact">Get In Touch</button>
+             <div id="tel">
+                <a href="mailto:njerinjihia43@gmail.com" rel="noopener noreferrer" target="_blank">📧</a>
+                <a href="https://www.linkedin.com/feed/" rel="noopener noreferrer" target="_blank">💼</a>
+                <a href="tel:+254712767988" target="_blank" rel="noopener noreferrer">📱</a>
+             </div> 
         </div>
+        <div class="col-md-6" id="me">
+          <img src="img/me.jpeg" alt="Myself" id="myself">
         </div>
+      </div>
+
+      <div class="grouped">
         <div class="about">
-          <h1>About Me</h1>
+          <span class="badge">About Me</span>
+          <h2>Building Digital Experiences</h2>
           <p>I'm a passionate developer who loves turning complex problems into simple, beautiful solutions. 
             My journey in tech started 5 years ago, and I've been constantly learning and evolving ever since.</p>
         </div>
-        <div id="story-grid">
-          <div class="story">
-            <h2>My Story</h2>
-            <p>What started as curiosity about how websites work has grown into a career I'm truly passionate about. 
-              I specialize in React, Node.js, and modern web technologies, always staying up-to-date with the latest trends and best practices.</p>
-            <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers. 
+        
+        <div class="row">
+          <div class="col-md-6 risto">
+            <div id="story">
+              <h1>My Story</h1>
+              <p>What started as curiosity about how websites work has grown into a career I'm truly passionate about. 
+                I specialize in React, Node.js, and modern web technologies, always staying up-to-date with the latest trends and best practices.</p>
+              <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers. 
                 I believe in the power of technology to make a positive impact on people's lives.</p>
+              <div class="tech">
+                <span class="badge">React</span>
+                <span class="badge">Typescript</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Next.js</span>
+                <span class="badge">CSS</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">AWS</span>
+                <span class="badge">Docker</span>
+              </div>
+            </div>
           </div>
-          <div class="grid">
-            <div class="card text-center">
-              <h1>💻</h1>
-              <div class="card-text">
-                <h3>Clean Code</h3>
-                <p>Writing maintainable, scalable code that follows best practices</p>
+
+          <div class="col-md-6">
+            <div class="grid">
+              <div class="card text-center">
+                <div class="ctext">
+                  <h1>💻</h1>
+                  <h2>Clean Code</h2>
+                  <p>Writing maintainable, scalable code that follows best practices</p>
+                </div>                
               </div>
-            </div>
-            <div class="card text-center">
-              <h1>🎨</h1>
-              <div class=" card-text">
-                <h3>Design focus</h3>
-                <p>Creating ntuitive user experiences with modern design principles</p>
+
+              <div class="card text-center">
+                <div class="ctext">
+                  <h1>🎨</h1>
+                  <h2>Design Focus</h2>
+                  <p>Creating intuitive user experiences with modern design principles</p>
+                </div>                
               </div>
-            </div>
-            <div class="card text-center">
-              <h1>🚀</h1>
-              <div class="card-text">
-                <h3>Performance</h3>
-                <p>Building fast, optimized applications that users love</p>
+
+              <div class="card text-center">
+                <div class="ctext">
+                  <h1>🚀</h1>
+                  <h2>Performance</h2>
+                  <p>Building fast, optimized applications that users love</p>
+                </div>
               </div>
+
+              <div class="card text-center">
+                <div class="ctext">
+                  <h1>👥</h1>
+                  <h2>Collaboration</h2>
+                  <p>Working effectively with teams to deliver exceptional results</p>
+                </div>                
               </div>
-            <div class="card text-center">
-              <h1>👥</h1>
-              <div class="card-text">
-                <h3>Collaboration</h3>
-                <p>Working effectively with teams to deliver exceptional results</p>
-              </div>
+
             </div>
           </div>
         </div>
+      </div>
+      
+        
 
         <div class="skills">
-          <h4>Skills & Expertice</h4>
+          <span class="badge">Skills & Expertice</span>
           <h2>Technical Proficiency</h2>
           <p>Here's an overview of my technical skills and the technologies I work with regularly.</p>
           <div class="row">
             <div class="col-md-4">
               <div class="card text-center">
                 <h1>Frontend</h1>
-                <div class="tt">
-                  <div class="txt">React/Next.js</div>
-                  <div class="txt">95%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="96" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 95%;"></div>
+
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">React/Next.js</div>
+                    <div class="txt">95%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="96" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 95%;"></div>
+                  </div>
                 </div>
 
-                <div class="tt">
-                  <div class="txt">Typescript</div>
-                  <div class="txt">90%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 90%;"></div>
-                </div>
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Typescript</div>
+                    <div class="txt">90%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                  </div>                                    
+                </div> 
 
-                <div class="tt">
-                  <div class="txt">CSS/Tailwind</div>
-                  <div class="txt">85%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 85%;"></div>
-                </div>
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">CSS/Tailwind</div>
+                    <div class="txt">85%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                  </div>                  
+                </div> 
 
-                <div class="tt">
-                  <div class="txt">Vue.js</div>
-                  <div class="txt">75%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card text-center">
-                <h1>Frontend</h1>
-                <div class="tt">
-                  <div class="txt">React/Next.js</div>
-                  <div class="txt">95%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="96" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 95%;"></div>
-                </div>
-
-                <div class="tt">
-                  <div class="txt">Typescript</div>
-                  <div class="txt">90%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-
-                <div class="tt">
-                  <div class="txt">CSS/Tailwind</div>
-                  <div class="txt">85%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 85%;"></div>
-                </div>
-
-                <div class="tt">
-                  <div class="txt">Vue.js</div>
-                  <div class="txt">75%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 75%;"></div>
-                </div>
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Vue.js</div>
+                    <div class="txt">75%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                  </div>                  
+                </div>                
 
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="card text-center">
-                <h1>Frontend</h1>
-                <div class="tt">
-                  <div class="txt">React/Next.js</div>
-                  <div class="txt">95%</div>
+                <h1>Backend</h1>
+
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Node.js</div>
+                    <div class="txt">90%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                  </div>
                 </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="96" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 95%;"></div>
+                
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">PostgreSQL</div>
+                    <div class="txt">85%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                  </div>
                 </div>
 
-                <div class="tt">
-                  <div class="txt">Typescript</div>
-                  <div class="txt">90%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-
-                <div class="tt">
-                  <div class="txt">CSS/Tailwind</div>
-                  <div class="txt">85%</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 85%;"></div>
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Express.js</div>
+                    <div class="txt">80%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
                 </div>
 
-                <div class="tt">
-                  <div class="txt">Vue.js</div>
-                  <div class="txt">75%</div>
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">MongoDB</div>
+                    <div class="txt">75%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                  </div>                  
+                </div>                
+
+
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card text-center">
+                <h1>Tools & Others</h1>
+
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Git/Github</div>
+                    <div class="txt">95%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="96" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 95%;"></div>
+                  </div>                  
                 </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 75%;"></div>
+                
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Docker</div>
+                    <div class="txt">80%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                  </div>                  
                 </div>
+
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">AWS</div>
+                    <div class="txt">75%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                  </div>                  
+                </div>                
+
+                <div class="bar">
+                  <div class="tt">
+                    <div class="txt">Figma</div>
+                    <div class="txt">85%</div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                  </div>  
+                </div>                
 
               </div>
             </div>
@@ -219,15 +283,16 @@
           </div>
         </div>
         <div class="work">
+          <span class="badge">My Work</span>
           <div class="row">
-            <span class="badge" id="work">My Work</span>
+            
             <div class="featured">
               <h1>Featured Projects</h1>
               <p>Here are some of my recent projects that showcase my skills and passion for creating meaningful digital experiences.</p>
               <div class="row" id="portfolio">
                 <div class="col-md-4">
                   <div class="card text-center">
-                    <img src="https://images.unsplash.com/photo-1649451844813-3130d6f42f8a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGxhcHRvcCUyMGNvZGluZ3xlbnwxfHx8fDE3NTgyMDc0MzV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080&amp;utm_source=figma&amp;utm_medium=referral" alt="E-Commerce Platform" class="project-image">
+                    <img src="img/ecom.jpeg" alt="E-Commerce Platform" class="project-image">
                     <h2>E-Commerce Platform</h2>
                     <p>A full-stack e-commerce solution built with Next.js, featuring uder authentication, payment processing, and inventory management.</p>
                     <div class="tech-used">
@@ -238,11 +303,18 @@
                       <span>NCSS</span>
                     </div>
                   </div>
+
+                  <div class="overlay">
+                    <div class="overlay-txt">
+                      <button class="btn btn-success">🔗 Live Demo</button>
+                      <button class="btn btn-primary">📁 Code</button>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col-md-4">
                   <div class="card text-center">
-                    <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4MTY5NTYyfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080&amp;utm_source=figma&amp;utm_medium=referral" alt="Task Management App" class="project-image">
+                    <img src="img/tma.jpeg" alt="Task Management App" class="project-image">
                     <h2>Task Management App</h2>
                     <p>A collaborative project management tool with real time updates, drag and drop funcionalities and team Collaboration features.</p>
                     <div class="tech-used">
@@ -253,11 +325,17 @@
                       <span>Express</span>
                     </div>
                   </div>
+                    <div class="overlay">
+                      <div class="overlay-txt">
+                        <button class="btn btn-success">🔗 Live Demo</button>
+                        <button class="btn btn-primary">📁 Code</button>
+                      </div>
+                  </div>                  
                 </div>
 
                 <div class="col-md-4">
                   <div class="card text-center">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTgxNzM0ODZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080&amp;utm_source=figma&amp;utm_medium=referral" alt="Analytics Dashboard" class="project-image">
+                    <img src="img/ad.jpeg" alt="Analytics Dashboard" class="project-image">
                     <h2>Analytics Dashboard</h2>
                     <p>A comprehensive data visualization dashboard with interactive charts
                       real-time data updates and customizable reporting features.</p>
@@ -270,40 +348,55 @@
 
                     </div>
                   </div>
+                    <div class="overlay">
+                      <div class="overlay-txt">
+                        <button class="btn btn-success">🔗 Live Demo</button>
+                        <button class="btn btn-primary">📁 Code</button>
+                      </div>
+                  </div>                  
                 </div>
               </div>
-              <a href="https://github.com/" rel="noopener noreferrer" target="_blank">To Github</a> 
+              <div class="col-md-12" id="gitlink">
+                <a href="https://github.com/" rel="noopener noreferrer" target="_blank">To Github</a>
+              </div>
             </div>
+        
 
             <div id="get">
-              <span>Get In Touch</span>
+              <span class="badge">Get In Touch</span>
               <h2>Lets Work Together</h2>
               <p>Have a project in mind?
                  I'd love to hear about it. 
                  Send me a message and let's discuss how we can bring your ideas to life.</p>
 
                  <div class="row" class="contact">
-                  <div class="col-md-4">
+                  <div class="col-md-4 cont">
                     <div class="card text-center">
-                      <h1>📧</h1>
-                      <h5>Email</h5>
-                      <a href="mailto:njerinjihia43@gmail.com">njerinjihia43@gmail.com</a>
+                      <div class="context">
+                        <h1>📧</h1>
+                        <h5>Email</h5>
+                        <a href="mailto:njerinjihia43@gmail.com">njerinjihia43@gmail.com</a>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4 cont">
                     <div class="card text-center">
-                      <h1>📱</h1>
-                      <h5>Phone</h5>
-                      <a href="tel:+254712767988">+254 (712) 767-988</a>
+                      <div class="context">
+                        <h1>📱</h1>
+                        <h5>Phone</h5>
+                        <a href="tel:+254712767988">+254 (712) 767-988</a>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4 cont">
                     <div class="card text-center">
-                      <h1>📍</h1>
-                      <h5>Location</h5>
-                      <p>Nairobi, Kenya</p>
+                      <div class="context">
+                        <h1>📍</h1>
+                        <h5>Location</h5>
+                        <p>Nairobi, Kenya</p>
+                      </div>
                     </div>
                   </div>
 
@@ -335,7 +428,7 @@
           <p>Full Stack Developer & UI/UX Designer</p>
           <div class="social">
             <a href="https://github.com" rel="noopener noreferrer" target="_blank">📁</a>
-            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" rel="noopener noreferrer" target="_blank">📁</a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" rel="noopener noreferrer" target="_blank">💼</a>
             <a href="mailto:njerinjihia43@gmail.com" rel="noopener noreferrer" target="_blank">📧</a>
           </div>
 

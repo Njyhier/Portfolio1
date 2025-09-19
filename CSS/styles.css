@@ -11,58 +11,230 @@
   background-color: black;
   color: white;
   position: fixed;
+  z-index: 1;
 }
 
 .nav-bar a{
   margin-left: 20px;
   text-decoration: none;
   color: inherit;
-}
- .greet{
-  text-align: center;
-  padding-top: 60px;
  }
- #me{
-  display: block;
-  width: 30%;
-  /*height: auto;*/
-  position: relative;
-  left: 35%;
+
+ #greet {
+  background: linear-gradient(to right, blueviolet, rgb(74, 74, 167) ,  rgb(63, 63, 129));
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+  padding-top: 100px;
+  line-height: 45px;
+  padding-left: 20px;
+ }
+
+ #tel {
+  padding: 20px 70px;
+  font-size: 20px;
+  padding-left: 0%;
+
+ }
+
+ #tel a {
+  text-decoration: none;
+  padding: 4px;
+  width: 200px;
+  background-color: white;
   border-radius: 50%;
-  z-index: -1;
+ }
+ #about {
+  background-color: rgb(153, 153, 241);
+  border-radius: 5%;
+ }
+ #myself{
+  width: 350px;
+  height: auto;
+  border-radius: 45%;
  }
 
  .about {
   max-width: 100%;
   text-align: center;
+  padding: 20px;
  }
 
- .story {
-  max-width: 50%;
-  /*text-align: center;*/
-  justify-content: left;
-
+ #story {
+  padding-bottom: 30px;
  }
 
- #story-grid {
-  display: flex;
-  width: 100%;
+ .tech span {
+  background-color: rgba(90, 90, 238,0.2);
+  color: black;
+  padding-right: 5px;
  }
+
  .grid {
-  width: 50%;
-  height: 500px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);  
-  gap: 3px;
-  padding-bottom: 20px;
+  gap: 2rem;
  }
- .grid .card{
-  min-width: 50%;
-  text-align: center;
-  height: 200px;
+ .card:hover {
+  box-shadow: -2px 2px 2px 5px black;
+  transform: translateY(-5px);
+ }
+ .ctext {
+  padding: 20% 0%;
+ }
+ .grouped{
+  background-color: rgba(213, 215, 218, 0.456);
+  padding-top: 100px;
+ }
 
+ .skills {
+  padding: 50px;
+  text-align: center;
  }
+
+ .skills .col-md-4 {
+  padding: 5px;
+ }
+ .bar{
+  padding: 15px;
+  }
+
+  .tech {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+  }
+
+  .work {
+    text-align: center;
+  }
+
+  .featured {
+    padding-top: 20px;
+  }
+
+  .work .col-md-4{
+    padding: 5px;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 99%;
+    height: 99%;
+    background: linear-gradient(to bottom, rgba(230, 220, 220, 0.3), rgba(66, 64, 64, 0.5));
+    display: none;
+    border-radius: 10px;
+  }
+
+  .overlay-txt {
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+  }
+
+  #portfolio .col-md-4:hover{
+    .card {
+  box-shadow: -2px 2px 2px 5px black;
+  transform: translateY(-5px);
+  }
+    .overlay {
+      display: inline;
+      box-shadow: inset;
+    }
+  }
+
+  #portfolio {
+    padding: 0px 10px;
+  }
+  #gitlink {
+    text-align: center;
+    background-color: black;
+    width: 25%;
+    border-radius: 10px;
+  }
+  #gitlink a {
+    text-decoration: none;
+    color: white;
+  
+  }
+
+  #get {
+    padding-top: 20px;
+  }
+
+
+  .cont .card {
+    min-width: 400px;
+    min-height: 300px;
+    align-items: center;
+
+  }
+
+  .context {
+    padding-top: 20%;
+  }
+
+  .col-md-7 .card {
+    width: 70%;
+    
+  }
+  .col-md-7 {
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding-left: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  label {
+    padding-top: 20px;
+  }
+  input {
+    padding-left: 0px;
+  }
+
+  .footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: rgb(218, 214, 214);
+  }
+
+  .footer a {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+
+
+ @media screen and (max-width: 400px) {
+   #greet{
+    min-height: fit-content;
+    width: 100%;
+   }
+
+   #myself {
+    width: 100%;
+   }
+   .grouped {
+    width: 100dvw;
+    text-align: center;
+   }
+
+   .grid {
+    display: block;
+   }
+  .grid .card {
+    width: 100%;
+  }
+ }
+ 
   .skills {
     padding-bottom: 20px;
   }
@@ -72,7 +244,7 @@
     display: flex;
   }
 .badge{
-  background-color: rgba(60,60,60,0.5);
+  background-color: rgba(71, 90, 196, 0.5);
 }
 #work {
   background-color: rgb(112, 112, 201);

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/scripts.js"></script>
     <title>Njyhier</title>
   </head>
   <body>
@@ -13,11 +15,11 @@
         <div class="header">
           <h1>Njihia Johnson</h1>
           <div class="nav-bar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#greet">Home</a>
+            <a href="#grouped">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#featured">Projects</a>
+            <a href="#get">Contact</a>
           </div>
         </div>
       </div>
@@ -28,8 +30,8 @@
           <p style="width: 70%;">I create beautiful, functional web applications that solve real-world problems. 
              With 5+ years of experience in modern web technologies, 
              I bring ideas to life through clean code and thoughtful design.</p>
-             <button type="button" class="btn btn-primary" id="view-work">View My Work</button>
-             <button type="button" class="btn btn-success" id="contact">Get In Touch</button>
+             <button type="button" class="btn bg-white" id="view-work"><a href="https://github.com/" style="text-decoration: none; color: rgb(10, 10, 10);" class="bg-white" rel="noopener noreferrer" target="_blank">View My Work</a></button>
+             <button type="button" class="btn bg-white" id="contact">Get In Touch</button>
              <div id="tel">
                 <a href="mailto:njerinjihia43@gmail.com" rel="noopener noreferrer" target="_blank">📧</a>
                 <a href="https://www.linkedin.com/feed/" rel="noopener noreferrer" target="_blank">💼</a>
@@ -41,7 +43,7 @@
         </div>
       </div>
 
-      <div class="grouped">
+      <div class="grouped" id="grouped">
         <div class="about">
           <span class="badge">About Me</span>
           <h2>Building Digital Experiences</h2>
@@ -111,7 +113,7 @@
       
         
 
-        <div class="skills">
+        <div class="skills" id="skills">
           <span class="badge">Skills & Expertice</span>
           <h2>Technical Proficiency</h2>
           <p>Here's an overview of my technical skills and the technologies I work with regularly.</p>
@@ -286,7 +288,7 @@
           <span class="badge">My Work</span>
           <div class="row">
             
-            <div class="featured">
+            <div class="featured" id="featured">
               <h1>Featured Projects</h1>
               <p>Here are some of my recent projects that showcase my skills and passion for creating meaningful digital experiences.</p>
               <div class="row" id="portfolio">
@@ -296,11 +298,11 @@
                     <h2>E-Commerce Platform</h2>
                     <p>A full-stack e-commerce solution built with Next.js, featuring uder authentication, payment processing, and inventory management.</p>
                     <div class="tech-used">
-                      <span>Next.js</span>
-                      <span>Typescript</span>
-                      <span>Stripe</span>
-                      <span>PostgreSQL</span>
-                      <span>NCSS</span>
+                      <span class="badge">Next.js</span>
+                      <span class="badge">Typescript</span>
+                      <span class="badge">Stripe</span>
+                      <span class="badge">PostgreSQL</span>
+                      <span class="badge">NCSS</span>
                     </div>
                   </div>
 
@@ -318,11 +320,11 @@
                     <h2>Task Management App</h2>
                     <p>A collaborative project management tool with real time updates, drag and drop funcionalities and team Collaboration features.</p>
                     <div class="tech-used">
-                      <span>React</span>
-                      <span>Node.js</span>
-                      <span>Socket.io</span>
-                      <span>MongoDB</span>
-                      <span>Express</span>
+                      <span class="badge">React</span>
+                      <span class="badge">Node.js</span>
+                      <span class="badge">Socket.io</span>
+                      <span class="badge">MongoDB</span>
+                      <span class="badge">Express</span>
                     </div>
                   </div>
                     <div class="overlay">
@@ -340,11 +342,11 @@
                     <p>A comprehensive data visualization dashboard with interactive charts
                       real-time data updates and customizable reporting features.</p>
                     <div class="tech-used">
-                      <span>React</span>
-                      <span>D3.js</span>
-                      <span>Python</span>
-                      <span>FastAPI</span>
-                      <span>Chart.js</span>
+                      <span class="badge">React</span>
+                      <span class="badge">D3.js</span>
+                      <span class="badge">Python</span>
+                      <span class="badge">FastAPI</span>
+                      <span class="badge">Chart.js</span>
 
                     </div>
                   </div>
@@ -402,7 +404,7 @@
 
                   <div class="col-md-7">
                     <div class="card">
-                      <form id="contact">
+                      <form id="contacts">
                         <label for="name">Name</label>
                         <input class="form-control" id="name" type="text" placeholder="Your name">
 
@@ -413,9 +415,9 @@
                         <input class="form-control" id="subject" type="text" placeholder="What's this about?">
 
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="name" type="text" placeholder="Tell me about your project"></textarea>
+                        <textarea class="form-control" id="message" type="text" placeholder="Tell me about your project"></textarea>
 
-                        <button type="submit" class="btn btn-primary">📤 Send Message</button>
+                        <button type="submit" id="send" class="btn btn-primary">📤 Send Message</button>
                       </form>
                     </div>
                   </div>
@@ -423,7 +425,7 @@
             </div>
           </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
           <h1>Njihia Johnson</h1>
           <p>Full Stack Developer & UI/UX Designer</p>
           <div class="social">

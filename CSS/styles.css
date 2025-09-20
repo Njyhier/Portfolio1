@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Copse|Delius+Swash+Caps|Gabriela|Unkempt&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0%;
   padding: 0;
   background-position: center;
+  font-family: sans-serif;
 }
 .header {
   display: flex;
@@ -112,6 +115,7 @@
 
   .featured {
     padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   .work .col-md-4{
@@ -133,7 +137,7 @@
   .overlay-txt {
     position: absolute;
     bottom: 20px;
-    left: 25%;
+    left: 28%;
   }
 
   #portfolio .col-md-4:hover{
@@ -163,7 +167,11 @@
   }
 
   #get {
-    padding-top: 20px;
+    background-image: url('../img/bgc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 50px;
   }
 
 
@@ -191,6 +199,11 @@
     padding-bottom: 20px;
   }
 
+  #send {
+    width: 100%;
+    margin-top: 10px;
+  }
+
   label {
     padding-top: 20px;
   }
@@ -205,6 +218,11 @@
     background-color: rgb(218, 214, 214);
   }
 
+  .footer p{
+    font-family: 'Gabriela', sans-serif;
+    font-style: italic;
+  }
+
   .footer a {
     text-decoration: none;
     background-color: white;
@@ -214,9 +232,21 @@
 
 
  @media screen and (max-width: 400px) {
-   #greet{
-    min-height: fit-content;
+
+  .nav-bar{
+    display: none;
+  }
+
+  *{
     width: 100%;
+    min-height: fit-content;
+    text-align: center;
+    padding: 0%;
+  }
+
+   #greet{
+    width: fit-content;
+    padding-top: 150px;
    }
 
    #myself {
@@ -230,8 +260,11 @@
    .grid {
     display: block;
    }
-  .grid .card {
+  .grid .card, {
     width: 100%;
+  }
+  .card, .badge, .overlay {
+    width: fit-content;
   }
  }
  

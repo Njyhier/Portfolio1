@@ -259,6 +259,7 @@ html, body {
 
   * {
     background-position: center;
+    font-family: sans-serif;
   }
   #greet {
     min-height: fit-content;

@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0%;
   padding: 0;
-  background-position: center;
   font-family: sans-serif;
 }
 .header {
@@ -67,7 +66,7 @@
   padding-bottom: 30px;
  }
 
- .tech span {
+ .techies span {
   background-color: rgba(90, 90, 238,0.2);
   color: black;
   padding-right: 5px;
@@ -80,7 +79,16 @@
  }
  .card:hover {
   box-shadow: -2px 2px 2px 5px black;
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+ }
+
+ #portfolio .col-md-4:hover .card {
+    box-shadow: -2px 2px 2px 5px black;
+    transform: translateY(-2px);
+ }
+
+ #portfolio .col-md-4:hover .overlay {
+  display: inline;
  }
  .ctext {
   padding: 20% 0%;
@@ -102,7 +110,7 @@
   padding: 15px;
   }
 
-  .tech {
+  .techies {
     padding: 30px;
     width: 100%;
     text-align: center;
@@ -140,16 +148,8 @@
     left: 28%;
   }
 
-  #portfolio .col-md-4:hover{
-    .card {
-  box-shadow: -2px 2px 2px 5px black;
-  transform: translateY(-5px);
-  }
-    .overlay {
-      display: inline;
-      box-shadow: inset;
-    }
-  }
+ 
+
 
   #portfolio {
     padding: 0px 10px;
@@ -176,7 +176,6 @@
 
 
   .cont .card {
-    min-width: 400px;
     min-height: 300px;
     align-items: center;
 
@@ -215,7 +214,10 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 15px;
+    margin: 0%;
+    padding-left: 0%;
     background-color: rgb(218, 214, 214);
+    width: 100dvw;
   }
 
   .footer p{
@@ -225,48 +227,9 @@
 
   .footer a {
     text-decoration: none;
-    background-color: white;
+    background-color: rgb(179, 141, 141);
     border-radius: 50%;
   }
-
-
-
- @media screen and (max-width: 200px) {
-
-  .nav-bar{
-    display: none;
-  }
-
-  *{
-    width: 100%;
-    min-height: fit-content;
-    text-align: center;
-    padding: 0%;
-  }
-
-   #greet{
-    width: fit-content;
-    padding-top: 150px;
-   }
-
-   #myself {
-    width: 100%;
-   }
-   .grouped {
-    width: 100dvw;
-    text-align: center;
-   }
-
-   .grid {
-    display: block;
-   }
-  .grid .card, {
-    width: 100%;
-  }
-  .card, .badge, .overlay {
-    width: fit-content;
-  }
- }
  
   .skills {
     padding-bottom: 20px;
@@ -283,3 +246,74 @@
   background-color: rgb(112, 112, 201);
   width: 25%;
 }
+
+@media screen and (max-width: 580px){
+
+  * {
+    background-position: center;
+  }
+  #greet {
+    min-height: fit-content;
+    color: rgb(167, 182, 167);
+    width: 100dvw;
+    padding-left: 0%;
+    margin: 0%;
+  }
+
+  #myself{
+    width: 100%;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  #grouped, .about {
+    width: 100%;
+    margin: 0%;
+  }
+
+
+  .grid {
+    display: block;
+  }
+  .card, .col-md-7 .card, .col-md-7 {
+    width: 100%;
+    padding: 0%;
+
+  }
+
+  .grid .card {
+    margin-bottom: 10px;
+  }
+
+  #skills{
+    width: 100dvw;
+  }
+
+  .skills .col-md-4 {
+    padding-left: 0%;
+    margin-left: 0%;
+
+  }
+
+  .skills .card {
+    min-width: 150px;
+    padding-left: 0%;
+    margin-left: 0%;
+
+  }
+
+  .techies {
+    text-align: center;
+    padding: 15px 0;
+    
+  }
+
+  #get .cont .card {
+    width: 100%;
+  }
+}
+
+
+

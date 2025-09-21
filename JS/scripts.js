@@ -1,6 +1,22 @@
 function receiveEmail(){
   let name =$("#name").val();
-  alert("Hello " + name +". " + "Your message has been received. I will get back to you shortly")
+  let email = $("#email").val();
+  let subject = $("#subject").val();
+  let message = $("#message").val();
+
+  if (name === ""){
+    alert("Please enter your name!");
+  }
+  else if ( email === "") {
+    alert("Please enter a valid email!");
+  }
+   else if (message === "") {
+    alert("Please write us something.");
+   }
+   else{
+    alert("Hello " + name +". " + "Your message has been received. I will get back to you shortly")
+
+   }
 }
 
 function resetForm(){

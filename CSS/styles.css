@@ -274,8 +274,6 @@ html, body {
     width: 100%;
   }
 
-  
-  }
 
   #grouped, .about {
     width: 100%;
@@ -283,13 +281,16 @@ html, body {
   }
 
 
-  .grid {
-    display: block;
-  }
+  
+  
   .card, .col-md-7 .card, .col-md-7 {
     width: 100%;
     padding: 0%;
 
+  }
+
+  .grid {
+    display: block;
   }
 
   .grid .card {
@@ -326,6 +327,3 @@ html, body {
     padding: 0%;
   }
 }
-
-
-

@@ -141,6 +141,7 @@ html, body {
   }
 
   .overlay-txt {
+    position: absolute;
     bottom: 20px;
     left: 28%;
   }

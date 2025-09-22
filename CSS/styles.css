@@ -30,7 +30,7 @@ html, body {
   background: linear-gradient(to right, blueviolet, rgb(74, 74, 167) ,  rgb(63, 63, 129));
   background-size: cover;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   line-height: 45px;
   padding-left: 20px;
@@ -101,7 +101,7 @@ html, body {
  .grouped{
   background-color: rgba(213, 215, 218, 0.456);
   padding-top: 100px;
-  height: 100vh;
+  min-height: 100vh;
  }
 
  .skills {
@@ -350,7 +350,7 @@ html, body {
    }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 1000px) {
     #greet, #grouped{
       height: fit-content;
     }

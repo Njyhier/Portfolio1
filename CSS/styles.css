@@ -101,6 +101,7 @@ html, body {
  .grouped{
   background-color: rgba(213, 215, 218, 0.456);
   padding-top: 100px;
+  height: 100vh;
  }
 
  .skills {
@@ -283,6 +284,7 @@ html, body {
   #grouped, .about {
     width: 100%;
     margin: 0%;
+    height: fit-content;
   }
 
 
@@ -334,7 +336,7 @@ html, body {
 }
 
 @media  screen and (max-width: 1060px) and (max-height: 500px) {
-  #greet {
+  #greet, #grouped {
     min-height: fit-content;
   }
 
@@ -346,5 +348,10 @@ html, body {
     height: 70vh;
     
    }
-  
 }
+
+@media screen and (max-height: 500px) {
+    #greet, #grouped{
+      height: fit-content;
+    }
+   }

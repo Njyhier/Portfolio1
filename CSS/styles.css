@@ -193,15 +193,17 @@ html, body {
   .col-md-5 .card {
     width: 70%;
     padding: 20px;
+    margin: auto;
     
   }
   .col-md-5 {
     align-items: center;
     text-align: left;
     width: 90%;
-    padding-left: 25%;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    margin: auto;
   }
 
   #send {
@@ -354,5 +356,19 @@ html, body {
 @media screen and (max-height: 1000px) {
     #greet, #grouped{
       height: fit-content;
+    }
+   }
+
+@media screen and (max-width: 768px) {
+    .header{
+      display: flex;
+      flex-direction: column;
+    }
+    .col-md-5 .card{
+      width: 500px;
+      background-color:ue;
+    }
+    .col-md-5 {
+      width: 100%;
     }
    }

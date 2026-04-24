@@ -372,3 +372,11 @@ html, body {
       width: 100%;
     }
    }
+#me{
+  background-color: azure;
+  border-radius: 50%;
+  display: flex;
+}
+#myself{
+  margin: auto;
+}
